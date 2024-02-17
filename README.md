@@ -9,7 +9,7 @@ when reaper is in:
 
 -Recording
 
-This is, as far as i understand, the same way mediaplayers and browsers do it when the pc shouldnt go to sleep.  
+This is, as far as i understand, the same way mediaplayers and browsers do it when they are playing a video and the pc and displays shouldnt go to sleep.  
 
 # Installation: 
 
