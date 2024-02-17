@@ -4,7 +4,9 @@ prevents the pc and connected displays to go into standby by repeatedly calling 
 when reaper is in:
 
 -Playback
+
 -Pause 
+
 -Recording
 
 This is, as far as i understand, the same way mediaplayers and browsers do it when the pc shouldnt go to sleep.  
