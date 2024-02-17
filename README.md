@@ -13,7 +13,7 @@ This is, as far as i understand, the same way mediaplayers and browsers do it wh
 
 - first you need to install reapy-boost https://github.com/Levitanus/reapy-boost into the python you use for reaper.
   
-We need reapy-boost to run a python loop outside of reaper's main thread
+  We need reapy-boost to run a python loop outside of reaper's main thread
   
 
 - now activate reapy-boost by calling reapy-boost.configure_reaper() from inside reaper (just use a dummy .py file and import as action)
