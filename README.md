@@ -19,8 +19,9 @@ This is, as far as i understand, the same way mediaplayers and browsers do it wh
   
   Now activate reapy-boost by calling
 
-  import reapy-boost
-  reapy-boost.configure_reaper()
+  - import reapy-boost
+  
+  - reapy-boost.configure_reaper()
 
   from inside reaper (just use a dummy .py file and import as action and run once)
   This only needs to be done once per installation and python env and never again after that
