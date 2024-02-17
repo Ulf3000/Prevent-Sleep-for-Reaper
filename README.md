@@ -1,8 +1,7 @@
-# SetThreadExecutionState-for-Reaper
-DONT go to sleep and/or turn off the display while reaper is playing/recording.
+# Prevent-Sleep-for-Reaper
 
-
-This script for Reaper calls SetThreadExecutionState(ES_DISPLAY_REQUIRED), repeatedly if reaper is in either 
+prevents the pc and connected displays to go into standby by repeatedly calling SetThreadExecutionState(ES_DISPLAY_REQUIRED)
+when reaper is in:
 
 -Playback
 -Pause 
@@ -12,9 +11,9 @@ This is, as far as i understand, the same way mediaplayers and browsers do it wh
 
 # Installation is a bit hacky: 
 
-- first you need to install reapy-boost
-  https://github.com/Levitanus/reapy-boost
-  we need reapy-boost to run a python loop outside of reaper's main thread
+- first you need to install reapy-boost https://github.com/Levitanus/reapy-boost into the python you use for reaper.
+  
+We need reapy-boost to run a python loop outside of reaper's main thread
   
 
 - now activate reapy-boost by calling reapy-boost.configure_reaper() from inside reaper (just use a dummy .py file and import as action)
