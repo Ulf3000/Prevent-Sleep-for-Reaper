@@ -14,13 +14,16 @@ This is, as far as i understand, the same way mediaplayers and browsers do it wh
 
 - first you need to install reapy-boost
 - https://github.com/Levitanus/reapy-boost
+- 
 
 - now activate reapy-boost by calling reapy-boost.configure_reaper() from inside reaper (just use a dummy .py file and import as action)
 - this only needs to be done once per installation and never again after that
+- 
 
 - you also need to install SWS extension for reaper from here:
 - https://www.sws-extension.org/
 - SWS extension can run scripts on reaper startup
+- 
 
 - finally save my script to a .py file and import it with reapers action list as a new action.
 - copy the command/action ID and paste it into SWS -> startup actions -> global startup actions
