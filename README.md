@@ -9,7 +9,7 @@ when reaper is in:
 
 This is, as far as i understand, the same way mediaplayers and browsers do it when the pc shouldnt go to sleep.  
 
-# Installation is a bit hacky: 
+# Installation: 
 
 - first you need to install reapy-boost https://github.com/Levitanus/reapy-boost into the python you use for reaper.
   
@@ -30,7 +30,9 @@ This is, as far as i understand, the same way mediaplayers and browsers do it wh
   
 
 - finally save my script to a .py file and import it with reapers action list as a new action.
+
 - copy the command/action ID and paste it into SWS -> startup actions -> global startup actions
+
 - the script should now run on reaper startup
 
 
