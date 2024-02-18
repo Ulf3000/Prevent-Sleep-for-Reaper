@@ -11,10 +11,10 @@ def deferred_loop(i):
           i = 0
           ctypes.windll.kernel32.SetThreadExecutionState(ES_DISPLAY_REQUIRED) # reset the standby timer
           #RPR_ShowConsoleMsg("prevent")
-        RPR_defer("deferred_loop("+str(i+1)+")")
+        RPR_defer("deferred_loop("+str(i+1)+")") # i+1
     
     else:    # lets not count up to huge numbers please. 
-        RPR_defer("deferred_loop("+str(i)+")")
+        RPR_defer("deferred_loop("+str(i)+")") # i
         
     #RPR_ShowConsoleMsg(i)
 deferred_loop(0)  # Start the loop
