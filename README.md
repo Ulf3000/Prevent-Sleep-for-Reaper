@@ -23,7 +23,9 @@ The script counts to 100 which is about every 4 to 5 seconds.
 - save the script to a .py file and import it with reapers action list as a new action.
 
 - copy the command/action ID and paste it into SWS -> startup actions -> global startup actions
-  ![grafik](https://github.com/Ulf3000/Prevent-Sleep-for-Reaper/assets/10765339/0bf36f64-50d5-458b-95ff-d2f8384002ae)
+
+![grafik](https://github.com/Ulf3000/Prevent-Sleep-for-Reaper/assets/10765339/fc4f8050-6894-4a8c-aae7-54928cba024c)
+
 
 - the script should now run on reaper startup
 
