@@ -1,7 +1,7 @@
 # Prevent-Sleep-for-Reaper
 
 prevents the pc and connected displays to go into standby by repeatedly calling SetThreadExecutionState(ES_DISPLAY_REQUIRED)
-when reaper is in:
+when reaper is stopped aka in:
 
 -Playback
 
@@ -9,33 +9,30 @@ when reaper is in:
 
 -Recording
 
-This is, as far as i understand, the same way mediaplayers and browsers do it when they are playing a video and the pc and displays shouldnt go to sleep.  
+-Recording pre-roll
+
+This is, as far as i understand, the same way mediaplayers and browsers do it when they are playing a video and the pc and displays shouldnt go to sleep.
+The script counts to 100 which is about every 4 to 5 seconds.
 
 # Installation: 
 
-- first you need to install reapy-boost https://github.com/Levitanus/reapy-boost into the python you use for reaper.
-  
-  We need reapy-boost to run a python loop outside of reaper's main thread!!!
-  
-  Now activate reapy-boost by calling
+- First you need to install SWS extension for reaper from https://www.sws-extension.org/
 
-  - import reapy-boost
+  SWS extension can run a global startup script on reaper startup
   
-  - reapy-boost.configure_reaper()
-
-  from inside reaper (just use a dummy .py file and import as action and run once)
-  This only needs to be done once per installation and python env and never again after that
-  
-
-- you also need to install SWS extension for reaper from https://www.sws-extension.org/
-
-  SWS extension can run scripts on reaper startup
-  
-
-- finally save my script to a .py file and import it with reapers action list as a new action.
+- save the script to a .py file and import it with reapers action list as a new action.
 
 - copy the command/action ID and paste it into SWS -> startup actions -> global startup actions
+  ![grafik](https://github.com/Ulf3000/Prevent-Sleep-for-Reaper/assets/10765339/0bf36f64-50d5-458b-95ff-d2f8384002ae)
 
 - the script should now run on reaper startup
+
+# Linux an MacOS
+for linux and macos similar apis should exist. Please replace the line:
+
+ctypes.windll.kernel32.SetThreadExecutionState(ES_DISPLAY_REQUIRED)
+
+with whatever your system api call or a simple mousemove or shiftclick (something which prevents the system and displays go to standby/sleep)
+
 
 
