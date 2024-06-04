@@ -1,7 +1,7 @@
 # Prevent-Sleep-for-Reaper
 
 prevents the pc and connected displays to go into standby by repeatedly calling SetThreadExecutionState(ES_DISPLAY_REQUIRED)
-when reaper is stopped aka in:
+when reaper is NOT stopped aka in:
 
 -Playback
 
@@ -15,6 +15,13 @@ This is, as far as i understand, the same way mediaplayers and browsers do it wh
 The script counts to 100 which is about every 4 to 5 seconds.
 
 # Installation: 
+
+- Setup a python folder to use with reaper
+  ![grafik](https://github.com/Ulf3000/Prevent-Sleep-for-Reaper/assets/10765339/3355743e-f9aa-4a70-9702-16b6764d64b5)
+
+  python is just a folder with s pecific subfolder structure , theres no need to install , set env or whatever.
+  just unpack a python folder anywhere and set the dll in the reaper setting
+
 
 - First you need to install SWS extension for reaper from https://www.sws-extension.org/
 
