@@ -17,6 +17,7 @@ The script counts to 100 which is about every 4 to 5 seconds.
 # Installation: 
 
 - Setup a python folder to use with reaper
+
   ![grafik](https://github.com/Ulf3000/Prevent-Sleep-for-Reaper/assets/10765339/3355743e-f9aa-4a70-9702-16b6764d64b5)
 
   python is just a folder with s pecific subfolder structure , theres no need to install , set env or whatever.
